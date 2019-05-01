@@ -1,0 +1,467 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge \textbf{KUNAL GOYAL}}\\\medskip % Your name
+	{\color{headings} '''Everyone here got some cause"}
+}
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+%
+
+% \medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+%\underline{\color{Blue} http://soundcloud.com}
+\hypersetup{colorlinks=true,urlcolor=blue}
+\urlstyle{same}
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+\workposition{NOV 2018 - PRESENT} % Durationfs
+{FT} % FT/PT (full time or part time)
+{UNREAL AI (Noida)} % Employer
+{Machine Learning Research Intern} % Job title
+{Optimized Neural Networks By Quantizing Weights and using Bit-wise operations in C++}
+\begin{itemize}
+    \item Implemented XNOR-Net Research paper on the top of Floating point architecture.
+    \item Every equation for CNN was derived manually.
+    \item Testing was done by replicating model architecture in PyTorch.
+        
+\end{itemize}
+
+\workposition{JUNE 2018 - AUG 2018} % Durationfs
+{FT} % FT/PT (full time or part time)
+{MERE EDU SERVICES PRIVATE LIMITED (Noida)} % Employer
+{Data Science intern} % Job title
+{Worked on various new technologies}
+\begin{itemize}
+\item  Built various Machine Learning Models using Sklearn to predict college from rank and categories.
+\item Analyzed and Cleaned various anomalies in database.
+\item Scraped various static and dynamic websites.
+%\item Built AI chatbot, that gives any query answer in Natural Language.
+\end{itemize}
+ % Description
+
+%------------------------------------------------
+
+%\workposition{Feb 1991 -- Jan 1995} % Duration
+%{FT} % FT/PT (full time or part time)
+%{Black Mesa Research Facility} % Employer
+%{Level 3 Research Associate} % Job title
+%{This position involved transitioning from purely theoretical work to experimental applications utilising the immense resources of Black Mesa. The transition required an initial learning curve in hazard containment, health and safety procedures and operating experimental infrastructure. Manipulating valves, carts, buttons, levers, etc considerably increased my physical fitness.}  % Description
+
+%------------------------------------------------
+
+%\workposition{Jul 1982 -- Dec 1984} % Duration
+%{PT} % FT/PT (full time or part time)
+%{WashPests Limited} % Employer
+%{Pest Control Technician} % Job title
+%{In this summer job I was tasked with helping eradicate pests from industrial areas. Work involved setting traps, spraying and physical eradication. I received praise for reaching difficult areas and my innovative use of a crowbar to assist in my work.} % Description
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\section[11pt]{Major Selected Projects}
+
+%\textit{References available on request}
+
+%------------------------------------------------
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{enumerate}
+	\item \textbf{{Counselling Chatbot}}
+	\begin{itemize}
+		\item Through this chatbot user can ask any kind of query regarding 40k+ colleges.
+		\item Dialogflow's NLP is being used to know user intention for a particular query.
+		\item Back-end was built with flask.
+	\end{itemize}
+	\begin{supertabular}{rl}
+		\tableentry{\em Link}{\url{https://newsite.mereschools.com/ai.html}}{}
+	\end{supertabular}
+
+	\item \textbf{Centralized Parking Assistance Using Computer Vision}
+	\begin{itemize}
+		\item This app is built with computer vision that parses parking space data in the cloud and will retrieve to a consumer app that will help the driver to find a parking spot around. All of this is automatic, without any human intervention.
+	\end{itemize}
+	\begin{supertabular}{rl}
+    	\tableentry{\em Link}{\url{https://bit.ly/2PGWxEl}}{}
+		%\tableentry{\em Link}{\url{https://github.com/kunalgoyal9/Centralised-Parking}}{}
+        %\tableentry{}{\url{-Assistance-Using-Computer-Vision}}{}
+	\end{supertabular}
+	\item \textbf{Convolution Neural Network Framework for edge devices in C++}
+	\begin{itemize}
+		\item Various layers were made in Object Oriented fashion to decrease the inference time.
+		\item Individual unit tests for each layers were made.
+	\end{itemize}
+	\begin{supertabular}{rl}
+    % 	\tableentry{\em Link}{\url{https://bit.ly/2PGWxEl}}{}
+		%\tableentry{\em Link}{\url{https://github.com/kunalgoyal9/Centralised-Parking}}{}
+        %\tableentry{}{\url{-Assistance-Using-Computer-Vision}}{}
+	\end{supertabular}
+\end{enumerate}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+% \section[11pt]{Major Courses}
+% \begin{supertabular}{rl}
+% 	\tableentry{Feb 2018 -- Aug 2018}{\textbf{Deeplearning.ai Specializations}}{}
+    %\tableentry{}{\textit{(Coursera)}}{}
+%   	\tableentry{}{This Specializations contains five courses:-}{}
+    % \tableentry{}{  1. Neural Networks and Deep Learning}{}
+    % \tableentry{}{  2. Improving Deep Neural Networks}{}
+    % \tableentry{}{  3. Structured Machine Learning Projects}{}
+    % \tableentry{}{  4. Convolutional Neural Networks}{}
+    % \tableentry{}{  5. Sequence Models}{}
+    % \tableentry{}{}{}
+    % \tableentry{Dec 2018--Feb 2018}{\textbf{Machine Learning By Andrew Ng}}{}
+    % \tableentry{}{\textit{Standford University (Coursera)}}{}
+% \end{supertabular}
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & D-813 Near Gurudwara Chawla Colony Ballabgarh Faridabad Haryana Pin. 121004\\ % Address
+			\raisebox{-1pt}{\faPhone} & +91 8587836880\\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:kunalgoyal.goyal9@gmail.com}{kunalgoyal.goyal9@gmail.com} \\ % Email address
+			%\raisebox{-1pt}{\small\faDesktop} & \href{https://www.LaTeXTemplates.com}{https://www.LaTeXTemplates.com} \\ % Website
+			\raisebox{-1pt}{\faGithub} & \href{https://github.com/kunalgoyal9}{https://github.com/kunalgoyal9} \\ % GitHub profile
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/kunalgoyal9}{https://www.linkedin.com/in/kunalgoyal9} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	\educationentry{2016--Aug/2020} % Duration
+	{Bachelor of Technology (B-Tech.)} % Degree
+	{CGPA : 8.43/10(up to 4th Sem)} % Honours, achievements or distinctions (e.g. first class honours)
+	{Computer Science} % Department
+	{USICT (GGSIPU) } % Institution
+    \educationentry{2014 -- 2016} % Duration
+	{XII (Senior Secondary)} % Degree
+	{Percentage : 91.80\%} % Honours, achievements or distinctions (e.g. first class honours)
+
+	{CBSE Board (Aggarwal Public School)} % Institution
+    
+    %------------------------------------------------
+	
+% 	\educationentry{2002 -- 2014} % Duration
+% 	{X (Secondary)} % Degree
+% 	{CGPA : 10.00/10} % Honours, achievements or distinctions (e.g. first class honours)
+% 	{} % Department
+% 	{CBSE Board (Aggarwal Public School)} % Institution
+	
+	%------------------------------------------------
+	
+	
+	%------------------------------------------------
+	
+	
+	%------------------------------------------------
+
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Achievements}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{2017--2018}{Secured 34th rank in \textbf{ACM-ICPC}}{}
+    \tableentry{}{\textbf{Amritapuri} regionals among top 256 teams}{}
+    \tableentry{}{of India and other neighbour countries}{}
+	
+	%------------------------------------------------
+	
+	\tableentry{2018}{Secured 7t    h rank among 2,12,994 participants}{}
+    \tableentry{}{in \textbf{Techgig Codegladiator} Presented by}{}
+    \tableentry{}{Deloitte.}{}
+	
+	%------------------------------------------------
+	\tableentry{2019}{Expert on \textbf{Codeforces}}{}
+%     \tableentry{}{  }}{}
+%     \tableentry{2019}{\textbf{Season 5 among} for Data Science 65K+ Applicants }{}
+    \tableentry{2019}{Finalist of \textbf{LinkedIn's MTV GetAJob} }{}
+    \tableentry{}{\textbf{Season 5} among 65K+ applicants.}{}
+    \tableentry{}{for Data Science Role..}{}
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Expertise}{Data Structure and Algorithm}{}
+	\tableentry{}{System Administration}{spaceafter}
+	%------------------------------------------------
+	
+	\tableentry{Frameworks}{Flask, TensorFlow, Keras, OpenCV}{spaceafter}
+	%\tableentry{}{Microsoft Windows}{}
+	%\tableentry{}{Computer Hardware \& Support}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Tools \& Libraries}{Git, Bash, NumPy, Matplotlib}{} 		
+    \tableentry{}{Beautifulsoup, Vim}{}
+    \tableentry{}{Pandas, Anaconda, Dialogflow}{spaceafter}
+    \tableentry{Major Languages}{C++, Python, MySQL}{spaceafter}
+	\tableentry{Operating Systems}{Linux, Windows}{}
+	%------------------------------------------------
+	
+\end{supertabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS DESCRIPTION
+%----------------------------------------------------------------------------------------
+
+% \section{Skills}
+
+% % Example \longformdescription{} command to add another section:
+
+% %\longformdescription{Heading}{Description}
+
+% %------------------------------------------------
+
+% % \longformdescription{Goal Oriented}{I believe in action over long-winded discussions.}
+
+% \longformdescription{Team Leader}{I believe working in team, where everyone gives their crucial viewpoints}
+
+% \longformdescription{Problem Solver}{Major joy is when I think}
+
+% %----------------------------------------------------------------------------------------
+% %	COMMUNICATION SKILLS
+% %----------------------------------------------------------------------------------------
+
+
+
+
+% 	%------------------------------------------------
+\section[11pt]{Major Courses}
+\begin{supertabular}{rl}
+	\tableentry{Feb 2018 -- Aug 2018}{\textbf{Deeplearning.ai Specializations}}{}
+    %\tableentry{}{\textit{(Coursera)}}{}
+%   	\tableentry{}{This Specializations contains five courses:-}{}
+    \tableentry{}{  1. Neural Networks and Deep Learning}{}
+    \tableentry{}{  2. Improving Deep Neural Networks}{}
+    \tableentry{}{  3. Structured Machine Learning Projects}{}
+    \tableentry{}{  4. Convolutional Neural Networks}{}
+    \tableentry{}{  5. Sequence Models}{}
+    \tableentry{}{}{}
+    \tableentry{Dec 2018--Feb 2018}{\textbf{Machine Learning By Andrew Ng}}{}
+    \tableentry{}{\textit{Standford University (Coursera)}}{}
+\end{supertabular}
+
+
+\section{Other Portfolio Link}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	\tableentry{Link}{\url{https://icpc.baylor.edu/ICPCID/VI3B963CMBIM}}{}
+\end{supertabular}
+
+\switchcolumn % Switch to the next paracol column
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+% \section{Publications}
+
+% % Example \longformdescription{} command to add another publication:
+
+% %\longformpublication{Reference (format this manually as desired)}
+
+% %------------------------------------------------
+
+% \longformpublication{\textbf{Freeman, G. R.} (1996). Chemistry of Multiply Charged Negative Molecular Ions and Clusters in the Gas Phase:  Terrestrial and in Intense Galactic Magnetic Fields. \textit{The Journal of Physical Chemistry}, \textit{100}(11), 4331-4338.}
+
+% \longformpublication{Jacobsen, F. M., Gee, N., \textbf{Freeman, G. R.} (1986). Electron mobility in liquid krypton as function of density, temperature, and electric field strength. \textit{Physical Review A}, \textit{34}(3): 2329-2335.}
+
+% %------------------------------------------------
+
+% % As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
+
+% % Example \doipublication{} command to add another publication:
+
+% %\doipublication{Year}{DOI}{firstauthor}{spaceafter}
+
+% % All four parameters are required (can be empty though)
+% % A value of "firstauthor" in the third parameter will print the DOI in bold
+% % A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
+
+% %------------------------------------------------
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+% 	%------------------------------------------------
+	
+% 	\doipublication{1996}{10.1021/jp951483+}{firstauthor}{spaceafter}
+	
+% 	%------------------------------------------------
+	
+% 	\doipublication{1990}{10.1139/p90-097}{firstauthor}{spaceafter}
+% 	\doipublication{1986}{10.1139/v86-297}{}{}
+	
+% 	%------------------------------------------------
+	
+% 	\doipublication{1986}{10.1103/PhysRevA.34.2329}{}{spaceafter}
+	
+% 	%------------------------------------------------
+	
+% 	& \textit{First author publications in} \textbf{bold}\\
+	
+% 	%------------------------------------------------
+	
+% \end{supertabular}
+
+% \medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
