@@ -81,11 +81,11 @@
 {FT} % FT/PT (full time or part time)
 {UNREAL AI (Noida)} % Employer
 {Machine Learning Research Intern} % Job title
-{Optimized Neural Networks By Quantizing Weights and using Bit-wise operations in C++}
+{}
 \begin{itemize}
     \item Implemented XNOR-Net Research paper on the top of Floating point architecture.
-    \item Every equation for CNN was derived manually.
-    \item Testing was done by replicating model architecture in PyTorch.
+    \item Entacted various convolution algorithms through GEMM operations (im2col, Winograd) using OpenBLAS.
+    \item  Experimented with storing data in different CPU memory architecture, to maximize cache usage (local of reference, blocking etc.) 
         
 \end{itemize}
 
@@ -93,7 +93,8 @@
 {FT} % FT/PT (full time or part time)
 {MERE EDU SERVICES PRIVATE LIMITED (Noida)} % Employer
 {Data Science intern} % Job title
-{Worked on various new technologies}
+{}
+% {Worked on various new technologies}
 \begin{itemize}
 \item  Built various Machine Learning Models using Sklearn to predict college from rank and categories.
 \item Analyzed and Cleaned various anomalies in database.
@@ -142,15 +143,27 @@
 %------------------------------------------------
 
 \begin{enumerate}
+    \item \textbf{Convolution Neural Network Framework for edge devices in C++}
+	\begin{itemize}
+		\item Various layers were made in Object Oriented fashion to decrease the inference time.
+		\item  Binarized big Floating point numbers and packed them to uint64\_tto leverage memory benefit, reduces the CPU clock cycles
+	\end{itemize}
+	
+	\begin{supertabular}{rl}
+    	\tableentry{\em Link}{\url{https://github.com/xyzunreal/Fiera}}{}
+		%\tableentry{\em Link}{\url{https://github.com/kunalgoyal9/Centralised-Parking}}{}
+        %\tableentry{}{\url{-Assistance-Using-Computer-Vision}}{}
+	\end{supertabular}
+
 	\item \textbf{{Counselling Chatbot}}
 	\begin{itemize}
 		\item Through this chatbot user can ask any kind of query regarding 40k+ colleges.
 		\item Dialogflow's NLP is being used to know user intention for a particular query.
-		\item Back-end was built with flask.
+% 		\item Back-end was built with flask.
 	\end{itemize}
-	\begin{supertabular}{rl}
-		\tableentry{\em Link}{\url{https://newsite.mereschools.com/ai.html}}{}
-	\end{supertabular}
+% 	\begin{supertabular}{rl}
+% 		\tableentry{\em Link}{\url{https://newsite.mereschools.com/ai.html}}{}
+% 	\end{supertabular}
 
 	\item \textbf{Centralized Parking Assistance Using Computer Vision}
 	\begin{itemize}
@@ -161,16 +174,7 @@
 		%\tableentry{\em Link}{\url{https://github.com/kunalgoyal9/Centralised-Parking}}{}
         %\tableentry{}{\url{-Assistance-Using-Computer-Vision}}{}
 	\end{supertabular}
-	\item \textbf{Convolution Neural Network Framework for edge devices in C++}
-	\begin{itemize}
-		\item Various layers were made in Object Oriented fashion to decrease the inference time.
-		\item Individual unit tests for each layers were made.
-	\end{itemize}
-	\begin{supertabular}{rl}
-    % 	\tableentry{\em Link}{\url{https://bit.ly/2PGWxEl}}{}
-		%\tableentry{\em Link}{\url{https://github.com/kunalgoyal9/Centralised-Parking}}{}
-        %\tableentry{}{\url{-Assistance-Using-Computer-Vision}}{}
-	\end{supertabular}
+	
 \end{enumerate}
 
 \medskip % Extra whitespace before the next section
@@ -234,7 +238,7 @@
 
 	\educationentry{2016--Aug/2020} % Duration
 	{Bachelor of Technology (B-Tech.)} % Degree
-	{CGPA : 8.43/10(up to 4th Sem)} % Honours, achievements or distinctions (e.g. first class honours)
+	{CGPA : 8.35/10(up to 5th Sem)} % Honours, achievements or distinctions (e.g. first class honours)
 	{Computer Science} % Department
 	{USICT (GGSIPU) } % Institution
     \educationentry{2014 -- 2016} % Duration
@@ -322,7 +326,7 @@
 	\tableentry{}{System Administration}{spaceafter}
 	%------------------------------------------------
 	
-	\tableentry{Frameworks}{Flask, TensorFlow, Keras, OpenCV}{spaceafter}
+	\tableentry{Frameworks}{Flask, Pytorch, TensorFlow, Keras}{spaceafter}
 	%\tableentry{}{Microsoft Windows}{}
 	%\tableentry{}{Computer Hardware \& Support}{spaceafter}
 	
@@ -376,7 +380,7 @@
     \tableentry{}{  4. Convolutional Neural Networks}{}
     \tableentry{}{  5. Sequence Models}{}
     \tableentry{}{}{}
-    \tableentry{Dec 2018--Feb 2018}{\textbf{Machine Learning By Andrew Ng}}{}
+    \tableentry{Dec 2017--Feb 2018}{\textbf{Machine Learning By Andrew Ng}}{}
     \tableentry{}{\textit{Standford University (Coursera)}}{}
 \end{supertabular}
 
@@ -464,4 +468,5 @@
 %----------------------------------------------------------------------------------------
 
 \end{document}
+
 
